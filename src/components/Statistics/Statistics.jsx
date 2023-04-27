@@ -4,14 +4,12 @@ import color from './getRandomHexColor';
 
 export default function Statistics({ stats, title }) {
   return (
-      <StatisticsCard>
+    <StatisticsCard>
         <Title>{title}</Title>
         <StatList>
             {stats.map(({id, label, percentage}) => (
                 <StatListItem key={id} style={{ backgroundColor: color() }}>
-                    <Label>
-                        { label }
-                    </Label>
+                    <Label>{ label }</Label>
                     <Percentage>{percentage}</Percentage>
                 </StatListItem>
             ))}  
