@@ -13,7 +13,10 @@ export const FriendListItem = styled.li`
     background-color: white;
     margin-bottom: 10px;
     gap: 10px;
-    padding: 5px;
+    padding: 5px 15px;
+    &:last-child {
+        margin-bottom: 0;
+    }
 `;
 export const Status = styled.span``;
 export const Avatar = styled.img`

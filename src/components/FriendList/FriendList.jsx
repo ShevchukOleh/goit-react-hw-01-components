@@ -1,4 +1,4 @@
-import { BsFillCircleFill } from 'react-icons/fa';
+import { IoEllipseSharp } from 'react-icons/io5';
 import PropTypes from 'prop-types';
 import {FriendsList, FriendListItem, Status, Avatar, Name} from './FriendList.styled'
 
@@ -7,7 +7,7 @@ export default function FriendList({ friends }) {
         <FriendsList>
             {friends.map(({ id, avatar, name, isOnline }) => (
                 <FriendListItem key={id}>
-                    <Status>{isOnline}</Status>
+                    <Status><IoEllipseSharp style={{ color: isOnline ? 'green' : 'red' }}/></Status>
                     <Avatar src={avatar} alt='avatar' />
                     <Name>{name}</Name>
                 </FriendListItem>
