@@ -9,7 +9,6 @@ export const Card = styled.div`
 `;
 
 export const UserName = styled.div`
-    padding-top: 30px;
     padding-bottom: 30px;
 `;
 
@@ -18,6 +17,7 @@ export const Avatar = styled.img`
     margin: 0 auto;
     width: 320px;
     height: 320px;
+    margin-bottom: 30px;
 `;
 
 export const Name = styled.p`

@@ -4,8 +4,8 @@ import {Card, UserName, Avatar, Name, Info, Stats, StatsItem, StatsInfo, StatsIn
 export default function Profile({avatar, username, tag, location, stats}) {
     return (
         <Card>
-            <Avatar src={avatar} alt='User avatar'/>
             <UserName>
+                <Avatar src={avatar} alt='User avatar'/>
                 <Name>{username}</Name>
                 <Info>@{tag}</Info>
                 <Info>{location}</Info>
