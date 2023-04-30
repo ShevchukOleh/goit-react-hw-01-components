@@ -5,7 +5,7 @@ import color from './getRandomHexColor';
 export default function Statistics({ stats, title }) {
   return (
     <StatisticsCard>
-        <Title>{title}</Title>
+        {title && <Title>Upload stats</Title>}
         <StatList>
             {stats.map(({id, label, percentage}) => (
                 <StatListItem key={id} style={{ backgroundColor: color() }}>
@@ -19,6 +19,7 @@ export default function Statistics({ stats, title }) {
 };
 
 Statistics.propTypes = {
+  title: PropTypes.string,
   stats: PropTypes.arrayOf(
     PropTypes.exact({
       id: PropTypes.string.isRequired,
